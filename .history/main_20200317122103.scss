@@ -1,0 +1,141 @@
+body {
+    margin: 0px;
+    background-image: url("./img/website-background.jpg");
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-navbar {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    &__name {
+        font-family: Mukta;
+        font-size: bold;
+        text-align: center;
+        align-items: center;
+        padding-left: 30px;
+    }
+    &__options {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0px;
+        padding-right: 20px;
+        &__buttons {
+            align-items: center;
+            text-align: center;
+            padding: 8px;
+        }
+        &__link {
+            font-family: Mukta;
+            font-size: bold;
+            text-decoration: none;
+            transition: all 0.1s ease 0s;
+            color: black;
+            &:hover {
+                color: #919c8c;
+                border-bottom: 3px solid #919c8c;
+            }
+        }
+        #contactLink {
+            border: 2px solid #919c8c;
+            border-radius: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.container-slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    &__content {
+        font-family: Anton;
+        font-size: 30px;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button button {
+        font-family: Mukta;
+        font-size: 20px;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: 2px solid rgba(255, 255, 255, 0.548);
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        outline: white;
+    }
+}
+
+.container-slogan__button {
+    position: relative;
+    padding: 1.4rem 4.2rem;
+    padding-right: 3.1rem;
+    font-size: 1.4rem;
+    color: var(--inv);
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+    transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        transition: inherit;
+        z-index: -1;
+    }
+    &:hover {
+        color: var(--def);
+        transition-delay: .6s;
+    }
+    &:hover:before {
+        transition-delay: 0s;
+    }
+    &:hover:before {
+        background: var(--inv);
+        transition-delay: .4s;
+    }
+}
+
+.from-top:before,
+.from-top:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
+
+.from-top:before {
+    bottom: 0;
+    border: 1px solid var(--inv);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.from-top:after {
+    top: 0;
+    height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+    height: 100%;
+}

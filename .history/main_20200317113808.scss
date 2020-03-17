@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    background-image: url("./img/website-background.jpg");
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-navbar {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    &__name {
+        font-family: Mukta;
+        font-size: bold;
+        text-align: center;
+        align-items: center;
+        padding-left: 30px;
+    }
+    &__options {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0px;
+        padding-right: 20px;
+        &__buttons {
+            align-items: center;
+            text-align: center;
+            padding: 8px;
+        }
+        &__link {
+            font-family: Mukta;
+            font-size: bold;
+            text-decoration: none;
+            transition: all 0.1s ease 0s;
+            color: black;
+            &:hover {
+                color: #919c8c;
+                border-bottom: 3px solid #919c8c;
+            }
+        }
+        #contactLink {
+            border: 2px solid #919c8c;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.container-slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    &__content {
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button button {
+        font-family: Mukta;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: 2px solid rgba(255, 255, 255, 0.548);
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        outline: white;
+    }
+}
