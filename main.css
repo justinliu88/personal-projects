@@ -19,7 +19,7 @@ body {
 }
 .container-homePage .container-navbar {
   height: 60px;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,8 +43,6 @@ body {
   justify-content: center;
 }
 .container-homePage .container-navbar__options {
-  width: 30%;
-  height: 60px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -53,6 +51,9 @@ body {
   list-style: none;
 }
 .container-homePage .container-navbar__options__buttons {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
   align-items: center;
   text-align: center;
 }
@@ -68,27 +69,55 @@ body {
   border-bottom: 3px solid #919c8c;
   transition: all 0.1s ease 0s;
 }
-.container-homePage .container-navbar__options #contactLink {
+.container-homePage .container-navbar__options #contact-link {
   border: 2px solid #919c8c;
   border-radius: 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
-.container-homePage .container-navbar__options #contactLink:hover {
+.container-homePage .container-navbar__options #contact-link:hover {
   text-shadow: 0px 0px 6px rgba(151, 151, 151, 0.486);
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
 }
-.container-homePage .container-navbar__burgerView {
+.container-homePage .container-navbar__burgerIcon {
   display: none;
   cursor: pointer;
+  padding-right: 30px;
 }
-.container-homePage .container-navbar__burgerView__line {
+.container-homePage .container-navbar__burgerIcon__line {
   width: 25px;
   height: 3px;
   background-color: #4e4e4e;
   margin: 5px;
+}
+@media screen and (max-width: 768px) {
+  .container-homePage body {
+    overflow-x: hidden;
+  }
+  .container-homePage .container-navbar__options {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    height: 875px;
+    width: 20%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .container-homePage .container-navbar__expand {
+    transform: translateX(0%);
+  }
+  .container-homePage .container-navbar__options__buttons {
+    opacity: 0;
+  }
+  .container-homePage .container-navbar__burgerIcon {
+    display: block;
+  }
 }
 .container-homePage .container-slogan {
   height: 875px;
@@ -142,11 +171,6 @@ body {
   transition: all 0.2s ease 0s;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    display: none;
-  }
-}
 .container-introPage {
   height: 875px;
 }

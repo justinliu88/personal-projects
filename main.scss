@@ -13,7 +13,7 @@ body {
     background-size: cover;
     .container-navbar {
         height: 60px;
-        width: auto;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -36,8 +36,6 @@ body {
             justify-content: center;
         }
         &__options {
-            width: 30%;
-            height: 60px;
             margin: 0px;
             padding: 0px;
             display: flex;
@@ -45,6 +43,9 @@ body {
             align-items: center;
             list-style: none;
             &__buttons {
+                padding-left: 15px;
+                padding-right: 15px;
+                width: auto;
                 align-items: center;
                 text-align: center;
             }
@@ -60,7 +61,7 @@ body {
                     transition: all 0.1s ease 0s;
                 }
             }
-            #contactLink {
+            #contact-link {
                 border: 2px solid #919c8c;
                 border-radius: 15px;
                 padding-left: 10px;
@@ -73,15 +74,43 @@ body {
                 }
             }
         }
-        &__burgerView {
+        &__burgerIcon {
             display: none;
             cursor: pointer;
+            padding-right: 30px;
             &__line {
                 width: 25px;
                 height: 3px;
                 background-color: rgb(78, 78, 78);
                 margin: 5px;
             }
+        }
+    }
+    @include MQ(M) {
+        body {
+            overflow-x: hidden;
+        }
+        .container-navbar__options {
+            position: absolute;
+            right: 0px;
+            top: 60px;
+            height: 875px;
+            width: 20%;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+        }
+        .container-navbar__expand {
+            transform: translateX(0%);
+        }
+        .container-navbar__options__buttons {
+            opacity: 0;
+        }
+        .container-navbar__burgerIcon {
+            display: block;
         }
     }
     .container-slogan {
@@ -134,12 +163,6 @@ body {
                 transition: all 0.2s ease 0s;
             }
         }
-    }
-}
-
-@include MQ(M) {
-    body {
-        display: none;
     }
 }
 
