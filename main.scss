@@ -1,19 +1,22 @@
+@import "./_mixin.scss";
 body {
     margin: 0px;
+    padding: 0px;
 }
 
 .container-homePage {
+    height: 935px;
     margin: 0px;
     background-image: url("./img/website-background.jpg");
-    height: 935px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .container-navbar {
-        width: auto;
         height: 60px;
+        width: auto;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
         background-color: whitesmoke;
         -webkit-user-select: none;
@@ -22,28 +25,28 @@ body {
         user-select: none;
         &__name {
             height: 60px;
+            padding-left: 30px;
+            margin: 0px;
             display: flex;
             font-family: Mukta;
             font-weight: bolder;
+            letter-spacing: 2px;
             text-align: center;
             align-items: center;
             justify-content: center;
-            padding-left: 30px;
-            margin: 0px;
         }
         &__options {
+            width: 30%;
             height: 60px;
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            justify-content: flex-end;
-            align-items: center;
             margin: 0px;
-            padding-right: 20px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
             &__buttons {
                 align-items: center;
                 text-align: center;
-                padding: 8px;
             }
             &__link {
                 font-family: Mukta;
@@ -70,17 +73,28 @@ body {
                 }
             }
         }
+        &__burgerView {
+            display: none;
+            cursor: pointer;
+            &__line {
+                width: 25px;
+                height: 3px;
+                background-color: rgb(78, 78, 78);
+                margin: 5px;
+            }
+        }
     }
     .container-slogan {
+        height: 875px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: top;
         align-items: center;
-        height: 875px;
-        width: 100%;
         &__content {
             font-family: Anton;
             font-size: 50px;
+            letter-spacing: 2px;
             height: 300px;
             width: 500px;
             display: flex;
@@ -95,6 +109,7 @@ body {
             font-family: Mukta;
             font-size: 20px;
             font-weight: bold;
+            letter-spacing: 1px;
             text-decoration: none;
             background-color: Transparent;
             background-repeat: no-repeat;
@@ -119,6 +134,12 @@ body {
                 transition: all 0.2s ease 0s;
             }
         }
+    }
+}
+
+@include MQ(M) {
+    body {
+        display: none;
     }
 }
 

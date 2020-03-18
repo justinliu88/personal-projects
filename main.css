@@ -1,20 +1,28 @@
+/*********************
+*media queries
+***********************/
+/*********************
+*breakpoints
+***********************/
 body {
   margin: 0px;
+  padding: 0px;
 }
 
 .container-homePage {
+  height: 935px;
   margin: 0px;
   background-image: url("./img/website-background.jpg");
-  height: 935px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container-homePage .container-navbar {
-  width: auto;
   height: 60px;
+  width: auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   background-color: whitesmoke;
   -webkit-user-select: none;
@@ -24,29 +32,29 @@ body {
 }
 .container-homePage .container-navbar__name {
   height: 60px;
+  padding-left: 30px;
+  margin: 0px;
   display: flex;
   font-family: Mukta;
   font-weight: bolder;
+  letter-spacing: 2px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-left: 30px;
-  margin: 0px;
 }
 .container-homePage .container-navbar__options {
+  width: 30%;
   height: 60px;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: flex-end;
-  align-items: center;
   margin: 0px;
-  padding-right: 20px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 .container-homePage .container-navbar__options__buttons {
   align-items: center;
   text-align: center;
-  padding: 8px;
 }
 .container-homePage .container-navbar__options__link {
   font-family: Mukta;
@@ -72,17 +80,28 @@ body {
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
 }
+.container-homePage .container-navbar__burgerView {
+  display: none;
+  cursor: pointer;
+}
+.container-homePage .container-navbar__burgerView__line {
+  width: 25px;
+  height: 3px;
+  background-color: #4e4e4e;
+  margin: 5px;
+}
 .container-homePage .container-slogan {
+  height: 875px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  height: 875px;
-  width: 100%;
 }
 .container-homePage .container-slogan__content {
   font-family: Anton;
   font-size: 50px;
+  letter-spacing: 2px;
   height: 300px;
   width: 500px;
   display: flex;
@@ -97,6 +116,7 @@ body {
   font-family: Mukta;
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: 1px;
   text-decoration: none;
   background-color: Transparent;
   background-repeat: no-repeat;
@@ -122,6 +142,11 @@ body {
   transition: all 0.2s ease 0s;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    display: none;
+  }
+}
 .container-introPage {
   height: 875px;
 }
