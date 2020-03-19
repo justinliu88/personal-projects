@@ -16,11 +16,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 .container-homePage .container-navbar {
-  height: 60px;
+  height: 50px;
   width: 100%;
+  z-index: 1;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -100,8 +101,8 @@ body {
   .container-homePage .container-navbar__options {
     position: absolute;
     right: 0px;
-    top: 60px;
-    height: 50%;
+    top: 49px;
+    height: 400px;
     width: 15%;
     background-color: whitesmoke;
     display: flex;
