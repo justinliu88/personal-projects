@@ -86,7 +86,8 @@ body {
 .container-homePage .container-navbar__burgerIcon {
   display: none;
   cursor: pointer;
-  padding-right: 36px;
+  position: absolute;
+  right: 33px;
 }
 .container-homePage .container-navbar__burgerIcon__line {
   width: 25px;
@@ -103,7 +104,7 @@ body {
     right: 0px;
     top: 49px;
     height: 400px;
-    width: 15%;
+    width: 100px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -115,7 +116,7 @@ body {
     transform: translateX(0%);
   }
   .container-homePage .container-navbar__options__buttons {
-    opacity: 0;
+    opacity: 1;
   }
   .container-homePage .container-navbar__burgerIcon {
     display: block;
