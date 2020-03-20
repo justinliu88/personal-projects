@@ -86,7 +86,7 @@ body {
 .container-homePage .container-navbar__burgerIcon {
   display: none;
   cursor: pointer;
-  padding-right: 30px;
+  padding-right: 36px;
 }
 .container-homePage .container-navbar__burgerIcon__line {
   width: 25px;
