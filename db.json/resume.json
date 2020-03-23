@@ -1,0 +1,41 @@
+{
+    "education": [{
+            "id": "0",
+            "title": "The University of Queensland",
+            "description": "Bachelor of Electrical Engineering",
+            "detailedDescription": "Focused on electrical engineering, also undertook several programming courses to broaden my view."
+        },
+        {
+            "id": "1",
+            "title": "Cairns State High School",
+            "description": "Cairns, 2012",
+            "detailedDescription": "2012 International Student Union leader. Graduated with an OP4."
+        }
+    ],
+
+    "experience": [{
+            "id": "A",
+            "company": "LUXXBOX PTY LTD",
+            "duration": "May 2019 - Now",
+            "title": "Graduate Electrical Engineer",
+            "duty": [
+                "Calculate product parameters and write product photometry and other technical reports. Specify LED Light source, power requirements, dimming parameters.",
+                "Test for compliance standards both in Australian and around the world.",
+                "The main driver in the implementation of the MRP system . Construct the data base and work with all stakeholders to help roll out the system.",
+                "Work with overseas suppliers and source products , including travelling overseas to inspect and supervise production."
+            ]
+        },
+        {
+            "id": "B",
+            "company": "University Project",
+            "duration": "March 2017 - July 2017",
+            "title": "Firmware and Hardware Engineer",
+            "duty": [
+                "Team leader, assign tasks to each individual team member and co-ordinate with them to make sure the product was carried out on time and up to standards.",
+                "Design circuit for a product that can measure temperature, humidity, UV and motion.",
+                "Design and draw PCB using Altium Designer.",
+                "Design and develop the firmware, integrate the sensors and program the micro-controller using C."
+            ]
+        }
+    ]
+}
