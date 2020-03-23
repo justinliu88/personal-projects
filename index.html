@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <div class="container-homePage">
+    <div id="homePage" class="container-homePage">
         <nav class="container-navbar">
             <h2 class="container-navbar__name">JUSTIN LIU</h2>
             <ul class="container-navbar__options">
                 <li id="link-home" class="container-navbar__options__buttons">
-                    <a class="container-navbar__options__link" href="#">HOME</a>
+                    <a class="container-navbar__options__link" href="#homePage">HOME</a>
                 </li>
                 <li id="link-resume" class="container-navbar__options__buttons">
                     <a class="container-navbar__options__link" href="#introPage">RESUME</a>
@@ -45,7 +45,7 @@
                 Passion led me here.
             </p>
             <div class="container-slogan__button">
-                <button type="button">EXPLORE</button>
+                <button type="button" onclick="window.location.href = '#introPage';">EXPLORE</button>
             </div>
         </div>
 
@@ -62,19 +62,17 @@
         </div>
     </div>
 
-    <section id="introPage">
-        <div class="container-introPage">
-            <div class="container-introduction__aboutTag">
-                <div class="container-introduction__aboutTag__title">
-                    <p>About Me</p>
-                </div>
-                <div class="container-introduction__aboutTag__content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, maxime corporis. Nemo inventore delectus expedita repellendus asperiores labore id esse incidunt ex ut sequi consequatur, dicta maiores distinctio. Dolor quos soluta
-                        beatae voluptates numquam inventore nesciunt excepturi. Accusantium beatae, nisi, omnis laudantium sapiente inventore labore placeat aperiam, amet repudiandae suscipit.</p>
-                </div>
+    <div id="introPage" class="container-introPage">
+        <div class="container-introPage__aboutTag">
+            <div class="container-introPage__aboutTag__tittle">
+                <p id="tittle">About Me</p>
+            </div>
+            <div class="container-introPage__aboutTag__content">
+                <p id="briefDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, maxime corporis. Nemo inventore delectus expedita repellendus asperiores labore id esse incidunt ex ut sequi consequatur, dicta maiores distinctio. Dolor quos soluta beatae
+                    voluptates numquam inventore nesciunt excepturi. Accusantium beatae, nisi, omnis laudantium sapiente inventore labore placeat aperiam, amet repudiandae suscipit.</p>
             </div>
         </div>
-    </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./main.js"></script>

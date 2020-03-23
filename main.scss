@@ -1,4 +1,10 @@
 @import "./_mixin.scss";
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -12,7 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     .container-navbar {
-        height: 50px;
+        height: 62px;
         width: 100%;
         z-index: 1;
         position: fixed;
@@ -65,11 +71,11 @@ body {
             }
             #contact-link {
                 border: 2px solid #919c8c;
-                border-radius: 15px;
+                border-radius: 10px;
                 padding-left: 10px;
                 padding-right: 10px;
                 &:hover {
-                    text-shadow: 0px 0px 6px rgba(151, 151, 151, 0.486);
+                    text-shadow: 0px 0px 3px rgba(151, 151, 151, 0.486);
                     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
                     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
                     transition: all 0.4s ease 0s;
@@ -193,4 +199,53 @@ body {
 
 .container-introPage {
     height: 875px;
+    margin: 0px;
+    background-image: url("./img/website-background-blur.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__aboutTag {
+        width: 500px;
+        height: 600px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 5px;
+        border-color: rgba(255, 255, 255, 0.548);
+        box-shadow: 0px 0px 60px 3px rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        &__tittle {
+            font-family: Mukta;
+            font-weight: bolder;
+            font-size: 30px;
+            position: absolute;
+            top: 60px;
+            #tittle {
+                margin: 0px;
+            }
+        }
+        &__content {
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Mukta;
+            font-weight: bolder;
+            font-size: 20px;
+            #briefDescription {
+                margin: 0px;
+            }
+        }
+    }
 }
