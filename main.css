@@ -131,7 +131,7 @@ body {
   }
 }
 .container-homePage .container-slogan {
-  height: 875px;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -140,10 +140,12 @@ body {
 }
 .container-homePage .container-slogan__content {
   font-family: Anton;
-  font-size: 50px;
-  letter-spacing: 2px;
-  height: 300px;
-  width: 500px;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  height: 35%;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,7 +156,7 @@ body {
 }
 .container-homePage .container-slogan__button button {
   font-family: Mukta;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
