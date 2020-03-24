@@ -4,9 +4,10 @@ $(document).ready(function() {
     });
 
     $(document.body).mouseup(function(element) {
-        if ((!$(element.target).hasClass('container-navbar__options')) && (!$(element.target).hasClass('container-navbar__options__link'))) {
+        if ((!$(element.target).hasClass('container-navbar__burgerIcon')) && (!$(element.target).hasClass('container-navbar__options__link'))) {
             $(".container-navbar__options").removeClass("container-navbar__expand")
         }
+
 
     });
 });
@@ -27,9 +28,7 @@ function navMobileView() {
             $("#" + this.id).animate({
                 opacity: '1',
                 transform: 'translateX(0%)'
-            }, 3000, function() {
-                console.log(this.id);
-            });
+            }, 3000);
         }
     })
 }
