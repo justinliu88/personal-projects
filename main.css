@@ -99,6 +99,7 @@ body {
 .container-homePage .container-navbar__burgerIcon__line {
   width: 25px;
   height: 3px;
+  border-radius: 5px;
   background-color: #4e4e4e;
   margin: 5px;
 }
@@ -279,6 +280,7 @@ body {
   height: 40px;
   background-color: rgba(245, 245, 245, 0.6);
   margin: 15px;
+  border-radius: 5px;
 }
 .container-introPage__sideMenu__edu {
   width: 30px;
