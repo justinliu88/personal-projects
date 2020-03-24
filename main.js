@@ -2,6 +2,13 @@ $(document).ready(function() {
     $("#container-navbar__burgerIcon").mouseup(function(element) {
         navMobileView();
     });
+
+    $(document.body).mouseup(function(element) {
+        if ((!$(element.target).hasClass('container-navbar__options')) && (!$(element.target).hasClass('container-navbar__options__link'))) {
+            $(".container-navbar__options").removeClass("container-navbar__expand")
+        }
+
+    });
 });
 
 function navMobileView() {
