@@ -232,6 +232,8 @@ body {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
         &__iconImg {
             position: absolute;
             top: 6.5rem;
@@ -276,7 +278,7 @@ body {
             width: 6px;
             height: 6px;
             border-radius: 10px;
-            background-color: rgba(245, 245, 245, 0.6);
+            background-color: whitesmoke;
             margin: 10px;
         }
         &__line {
@@ -286,13 +288,11 @@ body {
             margin: 15px;
             border-radius: 5px;
         }
-        &__edu {
-            width: 30px;
-            height: 30px;
-        }
-        &__exp {
-            width: 30px;
-            height: 30px;
+        &__content {
+            width: 23px;
+            height: 23px;
+            margin: 0.2rem;
+            cursor: pointer;
         }
     }
 }

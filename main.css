@@ -235,6 +235,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 .container-introPage__aboutTag__iconImg {
   position: absolute;
@@ -280,7 +282,7 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 10px;
-  background-color: rgba(245, 245, 245, 0.6);
+  background-color: whitesmoke;
   margin: 10px;
 }
 .container-introPage__sideMenu__line {
@@ -290,13 +292,11 @@ body {
   margin: 15px;
   border-radius: 5px;
 }
-.container-introPage__sideMenu__edu {
-  width: 30px;
-  height: 30px;
-}
-.container-introPage__sideMenu__exp {
-  width: 30px;
-  height: 30px;
+.container-introPage__sideMenu__content {
+  width: 23px;
+  height: 23px;
+  margin: 0.2rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

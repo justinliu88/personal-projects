@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#container-navbar__burgerIcon").mouseup(function(element) {
+    $("#container-navbar__burgerIcon").mouseup(function() {
         navMobileView();
     });
 
@@ -14,6 +14,10 @@ $(document).ready(function() {
         success: function(brief) {
             IntroPageBrief(brief);
         }
+    });
+
+    $(".container-introPage__sideMenu__content").click(function() {
+        TagContentSelector(this);
     });
 });
 
@@ -40,7 +44,21 @@ function navMobileView() {
 
 function IntroPageBrief(brief) {
     brief.map(briefDescription => {
-        console.log(briefDescription.content)
+        //console.log(briefDescription.content)
         $('#briefIntro').text(briefDescription.content)
     })
+}
+
+function TagContentSelector(element) {
+    if (element.id == ("firstTag")) {
+        $(".container-introPage__aboutTag").children().show()
+    } else if (element.id == ("eduTag")) {
+        console.log("YES")
+        $.ajax({
+            url: "https://justin-personal-website.herokuapp.com/education",
+            success: function() {
+                $(".container-introPage__aboutTag").children().hide();
+            }
+        })
+    }
 }
