@@ -239,7 +239,7 @@ body {
   height: 50%;
   width: 80%;
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,6 +258,35 @@ body {
   letter-spacing: 1px;
   padding-left: 20px;
   margin: 0px;
+}
+.container-introPage__sideMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: auto;
+  left: 7.5%;
+}
+.container-introPage__sideMenu__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.6);
+  margin: 10px;
+}
+.container-introPage__sideMenu__line {
+  width: 6px;
+  height: 40px;
+  background-color: rgba(245, 245, 245, 0.6);
+  margin: 15px;
+}
+.container-introPage__sideMenu__edu {
+  width: 30px;
+  height: 30px;
+}
+.container-introPage__sideMenu__exp {
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
