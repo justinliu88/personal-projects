@@ -210,9 +210,9 @@ body {
     justify-content: center;
     align-items: center;
     &__aboutTag {
-        width: 500px;
-        height: 600px;
-        border-width: 1px;
+        width: 60%;
+        height: 70%;
+        border-width: 0px;
         border-style: solid;
         border-radius: 5px;
         border-color: rgba(255, 255, 255, 0.548);
@@ -224,28 +224,31 @@ body {
         text-align: center;
         position: relative;
         &__iconImg {
-            font-family: Mukta;
-            font-weight: bolder;
-            font-size: 30px;
             position: absolute;
-            top: 30px;
+            top: 3.5rem;
             #iconImg {
-                height: 160px;
-                width: 160px;
+                height: 30%;
+                width: 30%;
             }
         }
         &__content {
-            height: 400px;
-            width: 400px;
+            height: 70%;
+            width: 75%;
             position: absolute;
-            bottom: 50px;
+            bottom: 1.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: Mukta;
-            font-weight: bolder;
-            font-size: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            color: rgb(8, 8, 8);
             #briefDescription {
+                justify-content: center;
+                text-align: start;
+                height: auto;
+                width: auto;
+                padding-left: 10px;
                 margin: 0px;
             }
         }
