@@ -139,6 +139,7 @@ body {
   align-items: center;
 }
 .container-homePage .container-slogan__content {
+  text-transform: uppercase;
   font-family: Anton;
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
@@ -146,6 +147,7 @@ body {
   width: 100%;
   margin-top: 5%;
   margin-bottom: 2%;
+  word-spacing: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,6 +231,10 @@ body {
   align-items: center;
   text-align: center;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .container-introPage__aboutTag__iconImg {
   position: absolute;
