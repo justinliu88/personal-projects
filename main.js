@@ -7,8 +7,13 @@ $(document).ready(function() {
         if ((!$(element.target).hasClass('container-navbar__burgerIcon')) && (!$(element.target).hasClass('container-navbar__options__link'))) {
             $(".container-navbar__options").removeClass("container-navbar__expand")
         }
+    });
 
-
+    $.ajax({
+        url: "https://justin-personal-website.herokuapp.com/briefDescription",
+        success: function(brief) {
+            IntroPageBrief(brief);
+        }
     });
 });
 
@@ -30,5 +35,12 @@ function navMobileView() {
                 transform: 'translateX(0%)'
             }, 3000);
         }
+    })
+};
+
+function IntroPageBrief(brief) {
+    brief.map(briefDescription => {
+        console.log(briefDescription.content)
+        $('#briefIntro').text(briefDescription.content)
     })
 }

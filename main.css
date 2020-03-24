@@ -229,31 +229,34 @@ body {
 }
 .container-introPage__aboutTag__iconImg {
   position: absolute;
-  top: 3.5rem;
+  top: 7rem;
 }
 .container-introPage__aboutTag__iconImg #iconImg {
   height: 30%;
   width: 30%;
 }
 .container-introPage__aboutTag__content {
-  height: 70%;
-  width: 75%;
+  height: 50%;
+  width: 80%;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Mukta;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #080808;
 }
-.container-introPage__aboutTag__content #briefDescription {
+.container-introPage__aboutTag__content #briefIntro {
   justify-content: center;
   text-align: start;
   height: auto;
   width: auto;
-  padding-left: 10px;
+  white-space: pre-line;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  padding-left: 20px;
   margin: 0px;
 }
 
