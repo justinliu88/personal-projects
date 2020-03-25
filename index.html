@@ -24,13 +24,13 @@
                     <a class="container-navbar__options__link" href="#introPage">RESUME</a>
                 </li>
                 <li id="link-services" class="container-navbar__options__buttons">
-                    <a class="container-navbar__options__link" href="#">SERVICES</a>
+                    <a class="container-navbar__options__link" href="#servicePage">SERVICES</a>
                 </li>
-                <li id="link-blog" class="container-navbar__options__buttons">
+                <!-- <li id="link-blog" class="container-navbar__options__buttons">
                     <a class="container-navbar__options__link" href="#">BLOG</a>
-                </li>
+                </li> -->
                 <li id="link-contact" class="container-navbar__options__buttons">
-                    <a id="contact-link" class="container-navbar__options__link" href="#">CONTACT</a>
+                    <a id="contact-link" class="container-navbar__options__link" href="#contactPage">CONTACT</a>
                 </li>
             </ul>
             <div class="container-navbar__burgerIcon" onclick="navMobileView()">
@@ -71,6 +71,8 @@
                 <p id="briefIntro"></p>
             </div>
         </div>
+
+        <!-- TODO: NEED MORE WORK ON THIS -->
         <div class="container-introPage__eduTag">
             <ul id="eduList"></ul>
         </div>
@@ -85,15 +87,25 @@
             <a id="eduTag" class="container-introPage__sideMenu__content">
                 <img src="./icon/education.svg" alt="EDU">
             </a>
-            <!-- <div class="container-introPage__sideMenu__line"></div>
-            <div class="container-introPage__sideMenu__dot"></div> -->
             <div class="container-introPage__sideMenu__line"></div>
             <a id="expTag" class="container-introPage__sideMenu__content">
                 <img src="./icon/hammer.svg" alt="EXP">
             </a>
             <div class="container-introPage__sideMenu__line"></div>
+            <a id="codeTag" class="container-introPage__sideMenu__content">
+                <img src="./icon/code.svg" alt="COD">
+            </a>
+            <div class="container-introPage__sideMenu__line"></div>
             <div class="container-introPage__sideMenu__dot"></div>
         </div>
+    </div>
+
+    <!-- TODO ADD SERVICE PAGE -->
+    <div id="servicePage" class="container-servicePage">
+    </div>
+
+    <!-- TODO ADD CONTACT PAGE -->
+    <div id="contactPage" class="container-contactPage">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

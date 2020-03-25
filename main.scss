@@ -204,7 +204,7 @@ body {
 }
 
 .container-introPage {
-    height: 875px;
+    height: 935px;
     margin: 0px;
     background-image: url("./img/website-background-blur.jpg");
     background-position: center;
@@ -295,4 +295,30 @@ body {
             cursor: pointer;
         }
     }
+}
+
+.container-servicePage {
+    height: 935px;
+    margin: 0px;
+    background-image: url("./img/website-background-blur.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contactPage {
+    height: 935px;
+    margin: 0px;
+    background-image: url("./img/website-background-blur.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

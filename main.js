@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: "https://justin-personal-website.herokuapp.com/briefDescription/",
+        url: "https://personal-website-justin.herokuapp.com/briefDescription/",
         success: function(brief) {
             IntroPageBrief(brief);
         }
@@ -55,7 +55,7 @@ function TagContentSelector(entity) {
     } else if (entity.id == ("eduTag")) {
         // TODO: NEED TO FIX THE BUG WHICH AJAX BEING CALLED TWICE
         $.ajax({
-            url: "https://justin-personal-website.herokuapp.com/education/",
+            url: "https://personal-website-justin.herokuapp.com/education/",
             success: function(eduHistory) {
                 $(".container-introPage__aboutTag").children().hide();
                 eduHistory.map(education => {
@@ -65,7 +65,14 @@ function TagContentSelector(entity) {
         })
     } else if (entity.id == ("expTag")) {
         $.ajax({
-            url: "https://justin-personal-website.herokuapp.com/experience/",
+            url: "https://personal-website-justin.herokuapp.com/experience/",
+            success: function(workExp) {
+                $(".container-introPage__aboutTag").children().hide();
+            }
+        })
+    } else if (entity.id == ("codeTag")) {
+        $.ajax({
+            url: "https://personal-website-justin.herokuapp.com/experience/",
             success: function(workExp) {
                 $(".container-introPage__aboutTag").children().hide();
             }
