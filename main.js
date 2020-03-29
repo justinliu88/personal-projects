@@ -63,6 +63,16 @@ function TagContentSelector(entity) {
                 })
             }
         })
+
+        //method number 2, so far this doesn't work :-(
+        // var url = "https://personal-website-justin.herokuapp.com/education/"
+        // $.getJSON(url, function(data) {
+        //     $(".container-introPage__aboutTag").children().hide();
+        //     data.map(education => {
+        //         $("#eduList").append("<li class='container-introPage__eduTag__item'>" + education.title + "</li>")
+        //     })
+        // })
+
     } else if (entity.id == ("expTag")) {
         $.ajax({
             url: "https://personal-website-justin.herokuapp.com/experience/",
