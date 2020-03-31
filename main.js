@@ -51,8 +51,9 @@ function IntroPageBrief(brief) {
 
 function TagContentSelector(entity) {
     if (entity.id == ("firstTag")) {
-        $(".container-introPage__aboutTag").children().show()
-        $(".container-introPage__eduTag").children().empty()
+        $(".container-introPage__aboutTag").children().show();
+        $(".container-introPage__eduTag").children().empty();
+        $(".container-introPage__expTag").children().empty();
 
     } else if (entity.id == ("eduTag")) {
         $.ajax({
