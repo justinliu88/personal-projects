@@ -214,6 +214,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     &__aboutTag {
         width: 60%;
         height: 70%;
@@ -264,6 +265,65 @@ body {
                 letter-spacing: 1px;
                 padding-left: 20px;
                 margin: 0px;
+            }
+        }
+    }
+    &__eduTag {
+        position: absolute;
+        top: 25%;
+        height: 60%;
+        width: 50%;
+        #eduList {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            margin: 0px;
+            padding-left: 0.8rem;
+            font-family: Ropa Sans, sans-serif;
+            font-size: 1.2rem;
+            .container-introPage__eduTag__item__title {
+                font-weight: bold;
+                padding-bottom: 0.8rem;
+            }
+            .container-introPage__eduTag__item__description {
+                padding-bottom: 0.8rem;
+            }
+            .container-introPage__eduTag__item__detail {
+                padding-bottom: 6rem;
+            }
+        }
+    }
+    &__expTag {
+        position: absolute;
+        top: 16%;
+        height: 70%;
+        width: 60%;
+        #expList {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            margin: 0px;
+            padding-left: 0.5rem;
+            font-family: Ropa Sans, sans-serif;
+            font-size: 1.2rem;
+            .container-introPage__expTag__item__company {
+                font-weight: bold;
+                padding-bottom: 0.8rem;
+            }
+            .container-introPage__expTag__item__duration {
+                padding-bottom: 0.8rem;
+            }
+            .container-introPage__expTag__item__title {
+                padding-bottom: 0.8rem;
+            }
+            .container-introPage__expTag__item__duty {
+                padding-bottom: 2rem;
             }
         }
     }

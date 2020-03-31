@@ -52,32 +52,36 @@ function IntroPageBrief(brief) {
 function TagContentSelector(entity) {
     if (entity.id == ("firstTag")) {
         $(".container-introPage__aboutTag").children().show()
+        $(".container-introPage__eduTag").children().empty()
+
     } else if (entity.id == ("eduTag")) {
-        // TODO: NEED TO FIX THE BUG WHICH AJAX BEING CALLED TWICE
         $.ajax({
             url: "https://personal-website-justin.herokuapp.com/education/",
             success: function(eduHistory) {
                 $(".container-introPage__aboutTag").children().hide();
+                $(".container-introPage__eduTag").children().empty();
+                $(".container-introPage__expTag").children().empty();
                 eduHistory.map(education => {
-                    $("#eduList").append("<li class='container-introPage__eduTag__item'>" + education.title + "</li>")
+                    $("#eduList").append("<li class='container-introPage__eduTag__item__title'>" + education.title + "</li> \
+                    <li class='container-introPage__eduTag__item__description'>" + education.description + "</li> \
+                    <li class='container-introPage__eduTag__item__detail'>" + education.detailedDescription + "</li>")
                 })
             }
         })
-
-        //method number 2, so far this doesn't work :-(
-        // var url = "https://personal-website-justin.herokuapp.com/education/"
-        // $.getJSON(url, function(data) {
-        //     $(".container-introPage__aboutTag").children().hide();
-        //     data.map(education => {
-        //         $("#eduList").append("<li class='container-introPage__eduTag__item'>" + education.title + "</li>")
-        //     })
-        // })
 
     } else if (entity.id == ("expTag")) {
         $.ajax({
             url: "https://personal-website-justin.herokuapp.com/experience/",
             success: function(workExp) {
                 $(".container-introPage__aboutTag").children().hide();
+                $(".container-introPage__eduTag").children().empty();
+                $(".container-introPage__expTag").children().empty();
+                workExp.map(experience => {
+                    $("#expList").append("<li class='container-introPage__expTag__item__company'>" + experience.company + "</li> \
+                    <li class='container-introPage__expTag__item__duration'>" + experience.duration + "</li> \
+                    <li class='container-introPage__expTag__item__title'>" + experience.title + "</li> \
+                    <li class='container-introPage__expTag__item__duty'>" + experience.duty + "</li>")
+                })
             }
         })
     } else if (entity.id == ("codeTag")) {
@@ -85,6 +89,8 @@ function TagContentSelector(entity) {
             url: "https://personal-website-justin.herokuapp.com/experience/",
             success: function(workExp) {
                 $(".container-introPage__aboutTag").children().hide();
+                $(".container-introPage__eduTag").children().empty();
+                $(".container-introPage__expTag").children().empty();
             }
         })
     }
