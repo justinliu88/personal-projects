@@ -54,6 +54,7 @@ function TagContentSelector(entity) {
         $(".container-introPage__aboutTag").children().show();
         $(".container-introPage__eduTag").children().empty();
         $(".container-introPage__expTag").children().empty();
+        $(".container-introPage__codeTag").css("display", "none");
 
     } else if (entity.id == ("eduTag")) {
         $.ajax({
@@ -62,6 +63,7 @@ function TagContentSelector(entity) {
                 $(".container-introPage__aboutTag").children().hide();
                 $(".container-introPage__eduTag").children().empty();
                 $(".container-introPage__expTag").children().empty();
+                $(".container-introPage__codeTag").css("display", "none");
                 eduHistory.map(education => {
                     $("#eduList").append("<li class='container-introPage__eduTag__item__title'>" + education.title + "</li> \
                     <li class='container-introPage__eduTag__item__description'>" + education.description + "</li> \
@@ -77,6 +79,7 @@ function TagContentSelector(entity) {
                 $(".container-introPage__aboutTag").children().hide();
                 $(".container-introPage__eduTag").children().empty();
                 $(".container-introPage__expTag").children().empty();
+                $(".container-introPage__codeTag").css("display", "none");
                 workExp.map(experience => {
                     $("#expList").append("<li class='container-introPage__expTag__item__company'>" + experience.company + "</li> \
                     <li class='container-introPage__expTag__item__duration'>" + experience.duration + "</li> \
@@ -86,13 +89,9 @@ function TagContentSelector(entity) {
             }
         })
     } else if (entity.id == ("codeTag")) {
-        $.ajax({
-            url: "https://personal-website-justin.herokuapp.com/experience/",
-            success: function(workExp) {
-                $(".container-introPage__aboutTag").children().hide();
-                $(".container-introPage__eduTag").children().empty();
-                $(".container-introPage__expTag").children().empty();
-            }
-        })
+        $(".container-introPage__aboutTag").children().hide();
+        $(".container-introPage__eduTag").children().empty();
+        $(".container-introPage__expTag").children().empty();
+        $(".container-introPage__codeTag").css("display", "flex");
     }
 }

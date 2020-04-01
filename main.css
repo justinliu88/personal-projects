@@ -330,6 +330,35 @@ body {
 .container-introPage__expTag #expList .container-introPage__expTag__item__duty {
   padding-bottom: 2rem;
 }
+.container-introPage__codeTag {
+  height: 50%;
+  width: 60%;
+  position: absolute;
+  top: 25%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Ropa Sans, sans-serif;
+  font-size: 1.2rem;
+  display: none;
+}
+.container-introPage__codeTag__content {
+  height: 20%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-introPage__codeTag__content img {
+  height: 80%;
+  width: 80%;
+}
+.container-introPage__codeTag__content__word {
+  padding-top: 1rem;
+  height: auto;
+  width: auto;
+}
 .container-introPage__sideMenu {
   display: flex;
   flex-direction: column;
