@@ -160,6 +160,7 @@ body {
             text-decoration: none;
             background-color: Transparent;
             background-repeat: no-repeat;
+            backdrop-filter: blur(8px);
             border: 2px solid rgba(255, 255, 255, 0.548);
             border-radius: 15px;
             padding-left: 35px;
@@ -206,7 +207,7 @@ body {
 .container-introPage {
     height: 935px;
     margin: 0px;
-    background-image: url("./img/website-background-blur.jpg");
+    background-image: url("./img/service.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,6 +216,10 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     &__aboutTag {
         width: 60%;
         height: 70%;
@@ -223,6 +228,7 @@ body {
         border-radius: 5px;
         border-color: rgba(255, 255, 255, 0.548);
         box-shadow: 0px 0px 60px 3px rgb(0, 0, 0);
+        backdrop-filter: blur(8px);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -296,6 +302,7 @@ body {
             }
         }
     }
+    // TODO: need to fix the responsive view, add more content, create multiple page view
     &__expTag {
         position: absolute;
         top: 16%;
@@ -335,7 +342,6 @@ body {
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-        font-family: Ropa Sans, sans-serif;
         font-size: 1.2rem;
         display: none;
         &__content {
@@ -350,6 +356,8 @@ body {
                 width: 80%;
             }
             &__word {
+                font-family: Ropa Sans, sans-serif;
+                font-weight: bold;
                 padding-top: 1rem;
                 height: auto;
                 width: auto;
@@ -362,7 +370,7 @@ body {
         align-items: center;
         position: absolute;
         height: auto;
-        left: 7.5%;
+        left: 9%;
         &__dot {
             width: 6px;
             height: 6px;
@@ -378,8 +386,8 @@ body {
             border-radius: 5px;
         }
         &__content {
-            width: 23px;
-            height: 23px;
+            width: 80%;
+            height: 80%;
             margin: 0.2rem;
             cursor: pointer;
         }
@@ -389,7 +397,7 @@ body {
 .container-servicePage {
     height: 935px;
     margin: 0px;
-    background-image: url("./img/website-background-blur.jpg");
+    background-image: url("./img/service.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
